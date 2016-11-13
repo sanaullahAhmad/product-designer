@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Designer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-controller="productDesignerController">
+<div class="row">
+                <div class="col-sm-2 col-md-1 col-xs-12 menu-parent">
+                    <ul class="nav nav-stacked menu-level-2">
+                        <li class="text-center">
+                            <a href="#" data-target-id="widgets">
+                                <img width="100%" id="menuItem_fit" class="menuIcon"  src="//cdn3.tailorstore.com/ui/emerald/choices/26/fit/43.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="fabric">
+                                <img  width="100%" class="menuIcon" id="menuIcon_fabric" src="//dyn1.tailorstore.com/MTIwfDEyMHw5MHxmZmZmZmY,/render/rs_shirt/normal/swatch_cam/swatch/3647.png">
+                                <br />
+                                <span>Fabric</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="sleeves">
+                                <img  width="100%" class="menuIcon" id="menuIcon_sleeve" src="//cdn1.tailorstore.com/ui/emerald/choices/26/sleeve/1.svg">
+                                <br />
+                                <span>Sleeve</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="collars">
+                                <img  width="100%" class="menuIcon" id="menuIcon_collar" src="//cdn2.tailorstore.com/ui/emerald/choices/26/collar/2.svg">
+                                <br />
+                                <span>Collar</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="forms">
+                                <img  width="100%" class="menuIcon" id="menuIcon_cuff" src="//cdn3.tailorstore.com/ui/emerald/choices/26/cuff/2.svg">
+                                <br />
+                                <span>Cuff</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="placket">
+                                <img  width="100%" class="menuIcon" id="menuIcon_placket" src="//cdn4.tailorstore.com/ui/emerald/choices/26/placket/1.svg">
+                                <br />
+                                <span>Placket</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="library">
+                                <img  width="100%" class="menuIcon" id="menuIcon_pocket" src="//cdn1.tailorstore.com/ui/emerald/choices/26/pocketPlacement/0.svg">
+                                <br />
+                                <span>Pocket</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="applications">
+                                <img  width="100%" class="menuIcon" id="menuIcon_backDetails" src="//cdn2.tailorstore.com/ui/emerald/choices/26/backDetails/0.svg">
+                                <br />
+                                <span>Back details</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="settings">
+                                <img  width="100%" class="menuIcon" id="menuIcon_bottomCut" src="//cdn3.tailorstore.com/ui/emerald/choices/26/bottomCut/3.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="buttons">
+                                <img  width="100%" class="menuIcon" id="menuIcon_button" src="//dyn1.tailorstore.com/ODB8ODB8Nnx8cG5n/render/rs_shirt/normal/redshift_icon_cam/button_top/13.png">
+                                <br />
+                                <span>Button</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="buttons">
+                                <img  width="100%" class="menuIcon" id="menuIcon_threadContrasts" src="//cdn1.tailorstore.com/ui/emerald/choices/26/buttonThread/0.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="settings">
+                                <img  width="100%" class="menuIcon" id="menuIcon_contrasts" src="//cdn2.tailorstore.com/ui/emerald/choices/26/contrasts.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="settings">
+                                <img  width="100%" alt="" class="placementIcon full" src="//cdn3.tailorstore.com/ui/emerald/choices/26/contrasts/141.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="settings">
+                                <img  width="100%" alt="" class="placementIcon full" src="//cdn4.tailorstore.com/ui/emerald/choices/26/embroidery/0.png">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                        <li  class="text-center">
+                            <a href="#" data-target-id="settings">
+                                <img  width="100%" alt="" class="placementIcon full" src="//cdn1.tailorstore.com/ui/emerald/choices/26/addons.svg">
+                                <br />
+                                <span>Fit</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="prevnext prev  hide-on-mobile text-center"><i class="glyphicon glyphicon-menu-down"></i></div>
+                    <div class="prevnext next hide-on-mobile text-center"><i class="glyphicon glyphicon-menu-up"></i></div>
+                </div>
+                <div class="col-sm-8 col-md-9 col-xs-12">
+                    <div class="hide-all-wells content">
+                        <div class="container">
+                            <div class="row header-div">
+                                <div class="col-sm-6 col-md-6 col-xs-12">
+                                     <img id="logo" src="http://sdammas.com/sdms1/image/catalog/sdammas-no-bg-site.png" alt="">
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-xs-12">
+                                    <br />
+                                    <br />
+                                    <p class="pull-right">
+                                        <a href="#">LOG IN</a>
+                                        <b>|</b>
+                                         <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Shopping Cart (0)</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <canvas id="product-canvas"   width=400 height=300></canvas>
+                       </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="widgets" >
+                       <h3>FIT <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+                            <li ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+                                <img src="//cdn3.tailorstore.com/ui/emerald/choices/26/fit/43.svg" alt=""> <span>Slim fit</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="fabric">
+                        <h3>Fabric <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+                        <form name="fabric_search"  >
+                            <div class="form-group" style="padding: 10px">
+                                <div class="input-group">
+                                    <input type="text"  placeholder="Search Fabric" class="form-control " name="like">
+                                              <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> </button>
+                                              </span>
+                                </div>
+                            </div>
+                        </form>
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+                            <li ng-click="change_fabric('fb-2585.jpg')">
+                                <img src="images/fabrics/2585.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li  ng-click="change_fabric('fb-3381.jpg')">
+                                <img src="images/fabrics/3381.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li ng-click="change_fabric('fb-3599.jpg')">
+                                <img src="images/fabrics/3599.jpg"   alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li ng-click="change_fabric('fb-3657.jpg')">
+                                <img src="images/fabrics/3657.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li ng-click="change_fabric('fb-3677.jpg')">
+                                <img src="images/fabrics/3677.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li ng-click="change_fabric('fb-3720.jpg')">
+                                <img src="images/fabrics/3720.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li ng-click="change_fabric('fb-3721.jpg')">
+                                <img src="images/fabrics/3721.jpg"  alt="">
+                                <span style="  float: right;width: 150px;">
+                                    <strong>Telde, purple</strong>
+                                    <br />
+                                    <small>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </small>
+                                </span>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="sleeves">
+                        <h3>Sleeves <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+                            <li ng-click="change_sleeve('default-overlay.png',true)">
+                                <img src="//cdn1.tailorstore.com/ui/emerald/choices/26/sleeve/1.svg" width="80"  alt="">
+                                <span style="   float: right;width:190px;margin-top: 30px;">
+                                    <strong>Long sleeve</strong>
+
+                                </span>
+                            </li>
+                            <li ng-click="change_sleeve('overlay1.png',false)">
+                                <img src="//cdn1.tailorstore.com/ui/emerald/choices/26/sleeve/2.svg"  width="80" alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Short sleeve</strong>
+
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="collars">
+                        <h3>Collars <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+                            <li ng-click="change_collar('1.png')">
+                                <img src="//cdn4.tailorstore.com/ui/emerald/choices/26/collar/17.svg" width="80"  alt="">
+                                <span style="  float: right;width: 185px;">
+                                    <strong>Tab</strong>
+                                    <br />
+                                    <small>
+                                        Wings held together by a strap which arcs your tie knot.
+                                    </small>
+                                </span>
+                            </li>
+                            <li ng-click="change_collar('2.png')">
+                                <img src="//cdn2.tailorstore.com/ui/emerald/choices/26/collar/13.svg"  width="80" alt="">
+                                <span style="  float: right;width: 185px;">
+                                    <strong>Club</strong>
+                                    <br />
+                                    <small>
+                                        A classic look with rounded tips and standard spread.
+                                    </small>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="col-md-9 well menu-level-2-content" id="forms">
+                        Forms
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="placket">
+                        <h3>Placket <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+                            <li ng-click="change_placket('default-overlay.png',true)" style="padding: 10px 0px;">
+                                <img src="///cdn4.tailorstore.com/ui/emerald/choices/26/placket/1.svg" width="80"  alt="">
+                                <span style="   float: right;width:190px;margin-top: 30px;">
+                                    <strong>With placket</strong>
+
+                                </span>
+                            </li>
+                            <li ng-click="change_placket('default-overlay.png',true)" style="padding: 10px 0px;">
+                                <img src="//cdn2.tailorstore.com/ui/emerald/choices/26/placket/2.svg" width="80"  alt="">
+                                <span style="   float: right;width:190px;margin-top: 30px;">
+                                    <strong>Without placket</strong>
+
+                                </span>
+                            </li>
+                            <li ng-click="change_placket('overlay1.png',false)" style="padding: 10px 0px;">
+                                <img src="//cdn4.tailorstore.com/ui/emerald/choices/26/placket/3.svg"  width="80" alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Hidden buttons</strong>
+
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 well menu-level-2-content" id="library">
+                        Library
+                    </div>
+                    <div class="col-md-9 well menu-level-2-content" id="applications">
+                        Applications
+                    </div>
+
+                    <div class="col-md-9 well menu-level-2-content" id="settings">
+                        Settings
+                    </div>
+                    <div class="col-md-3 col-sm-4 well menu-level-2-content" id="buttons">
+                        <h3>Buttons <span class="pull-right hide-all-wells"><i class="glyphicon glyphicon-remove-sign"></i></span></h3>
+
+                        <ul  ng-scrollbars rebuild-on-resize   ng-scrollbars-config="ngScrollbarsConfig">
+
+                            <li ng-click="change_button('13.png')">
+                                <img src="images/buttons/13.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Coria White</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('16.png')">
+                                <img src="images/buttons/16.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Coria Dark gray</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('31.png')">
+                                <img src="images/buttons/31.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Coria Brown</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('17.png')">
+                                <img src="images/buttons/17.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Coria Red</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('18.png')">
+                                <img src="images/buttons/18.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Avila White</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('52.png')">
+                                <img src="images/buttons/52.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Avila Blue</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('49.png')">
+                                <img src="images/buttons/49.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Avila Purple</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('42.png')">
+                                <img src="images/buttons/42.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Langa Orange</strong>
+                                </span>
+                            </li>
+                            <li ng-click="change_button('50.png')">
+                                <img src="images/buttons/50.png"  alt="">
+                                <span style="  float: right;width:190px;margin-top: 30px;">
+                                    <strong>Langa Pink</strong>
+                                </span>
+                            </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-sm-2 col-md-2 col-xs-12 full-height menu-right">
+                    <div class=" text-right">
+                        <h1 class="price">$79</h1>
+                        <p class="freeShipping">Free shipping</p>
+                        <button class="btn btn-primary">
+                            &nbsp;
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            ADD TO CART
+                            &nbsp;
+                        </button>
+
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <div class="form-group">
+                            <button class="btn btn-default" ng-click="reset()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                                RESET
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-share"></span>
+                                SHARE
+                            </button>
+
+                        </div>
+
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="glyphicon glyphicon-zoom-in " id="btn-zoom"></span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jMouseWheel.js"></script>
+<script src="js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/directives/ng-scrollbars/scrollbars.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
